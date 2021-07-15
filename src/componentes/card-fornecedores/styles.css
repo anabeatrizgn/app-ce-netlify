@@ -1,0 +1,62 @@
+.card-fornecedores {
+  width: 40em;
+  height: 10.375em;
+  border-radius: 2em;
+  margin: 0.5em;
+  box-shadow: 0.3125em 0.1875em 0.5em rgb(124, 124, 124);
+  padding: 2em;
+}
+
+.logo-fornecedores {
+  width: 6em;
+  height: 6em;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.infos-fornecedores {
+  gap: 0.5em;
+  margin: 0.5em;
+  color: rgb(28, 20, 51);
+}
+
+@media (max-width: 768px) {
+  .card-fornecedores {
+    width: 35em;
+    height: 12em;
+  }
+}
+
+@media (max-width: 421px) {
+  .card-fornecedores {
+    width: 15em;
+    height: 12em;
+  }
+
+  .logo-fornecedores {
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  .resp-content h2 {
+    font-size: 1em;
+  }
+
+  .resp-column {
+    flex-direction: column;
+  }
+
+  .resp-disp {
+    display: none;
+  }
+
+  spam p {
+    margin-top: 0;
+  }
+
+  .bt-resp {
+    width: 7em;
+    height: 4em;
+  }
+}

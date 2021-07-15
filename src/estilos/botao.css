@@ -1,0 +1,33 @@
+.bt-primario {
+  background-color: #21df86;
+  padding: 0.7em 7.4em;
+  outline: none;
+  border: 0.0625em solid rgb(28, 20, 51);
+  border-radius: 2em;
+  color: rgb(28, 20, 51);
+  font-weight: bold;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.bt-primario:hover {
+  background-color: #46dd97;
+  color: rgb(39, 36, 48);
+  box-shadow: 0 1.25em 1em rgb(219, 219, 219);
+  transform: translateY(-0.3125em);
+  cursor: pointer;
+}
+
+.bt-secundario {
+  background-color: rgb(28, 20, 51);
+  color: white;
+  padding: 1em;
+  width: fit-content;
+  margin-left: auto;
+  outline: none;
+}
+
+.bt-secundario:hover {
+  background-color: rgb(39, 36, 48);
+  cursor: pointer;
+}

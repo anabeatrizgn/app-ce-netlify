@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  font-size: 1em;
+  color: rgb(28, 20, 51);
+  font-weight: bolder;
+}

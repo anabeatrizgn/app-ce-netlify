@@ -1,0 +1,26 @@
+.busca {
+  margin: 5em;
+}
+
+.imagem-busca {
+  margin-left: 4em;
+}
+
+.card {
+  height: 31.25em;
+}
+
+@media (max-width: 421px) {
+  .busca {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .imagem-resp {
+    display: none;
+  }
+
+  .logo-resp {
+    margin-bottom: 2em;
+  }
+}

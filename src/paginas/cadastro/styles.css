@@ -1,0 +1,38 @@
+.form-cadastro {
+  height: auto;
+  width: 43.75em;
+  justify-content: space-between;
+  box-shadow: 0.3125em 0.1875em 0.5em rgb(124, 124, 124);
+}
+
+.body-cadastro {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.body-cadastro div {
+  margin-right: 0.625em;
+}
+
+@media (max-width: 768px) {
+  .form-cadastro {
+    width: 30em;
+    margin-left: 0.625em;
+  }
+}
+
+@media (max-width: 421px) {
+  .form-cadastro {
+    width: 65%;
+    margin-top: 26em;
+  }
+
+  .body-cadastro {
+    flex-direction: column;
+  }
+
+  .h1resp {
+    font-size: 2.5em;
+  }
+}

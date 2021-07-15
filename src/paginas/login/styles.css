@@ -1,0 +1,35 @@
+.form-login {
+  height: auto;
+  width: 18.75em;
+  justify-content: space-between;
+  box-shadow: 0.3125em 0.1875em 0.5em rgb(124, 124, 124);
+}
+
+.container-form-login {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.conta-luz {
+  margin-right: 4em;
+  margin-left: 7em;
+}
+
+@media (max-width: 768px) {
+  .conta-luz {
+    display: none;
+  }
+  .container-form-login {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 421px) {
+  .conta-luz {
+    display: none;
+  }
+  .form-login {
+    width: 50%;
+  }
+}
