@@ -50,6 +50,7 @@ export default function Cadastro() {
     if (cep.length === 8) {
       handlePreencherCidade(cep);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cep]);
 
   useEffect(() => {
