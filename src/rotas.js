@@ -9,7 +9,7 @@ import Cadastro from "./paginas/cadastro";
 import Fornecedores from "./paginas/fornecedores";
 import { AuthProvider } from "./contexto/autorizacao";
 import { UseAuth } from "./contexto/autorizacao";
-// import { FetchProvider } from "./contexto/regra-negocio";
+import { FetchProvider } from "./contexto/regra-negocio";
 
 function AuthPath(props) {
   const { token } = UseAuth();
@@ -23,15 +23,15 @@ function Rotas() {
   return (
     <Router>
       <AuthProvider>
-        {/* <FetchProvider> */}
-        <Switch>
-          <Route path="/" exact component={Login} />
-          <Route path="/cadastro" component={Cadastro} />
-          <AuthPath>
-            <Route path="/fornecedores" component={Fornecedores} />
-          </AuthPath>
-        </Switch>
-        {/* </FetchProvider> */}
+        <FetchProvider>
+          <Switch>
+            <Route path="/login" component={Login} />
+            <Route path="/cadastro" component={Cadastro} />
+            <AuthPath>
+              <Route exact path="/" component={Fornecedores} />
+            </AuthPath>
+          </Switch>
+        </FetchProvider>
       </AuthProvider>
     </Router>
   );
