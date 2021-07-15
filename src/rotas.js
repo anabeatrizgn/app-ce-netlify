@@ -25,10 +25,10 @@ function Rotas() {
       <AuthProvider>
         <FetchProvider>
           <Switch>
-            <Route path="/login" component={Login} />
+            <Route exact path="/" component={Login} />
             <Route path="/cadastro" component={Cadastro} />
             <AuthPath>
-              <Route exact path="/" component={Fornecedores} />
+              <Route path="/fornecedores" component={Fornecedores} />
             </AuthPath>
           </Switch>
         </FetchProvider>
