@@ -19,14 +19,17 @@ export function FetchProvider({ children }) {
     const body = JSON.stringify(data);
 
     try {
-      const response = await fetch("http://localhost:3300/login", {
-        method: "POST",
-        headers: {
-          accept: "application/json",
-          "content-type": "application/json",
-        },
-        body,
-      });
+      const response = await fetch(
+        "https://clarke-energia.herokuapp.com/login",
+        {
+          method: "POST",
+          headers: {
+            accept: "application/json",
+            "content-type": "application/json",
+          },
+          body,
+        }
+      );
 
       const login = await response.json();
 
@@ -61,14 +64,17 @@ export function FetchProvider({ children }) {
     const body = JSON.stringify(dataRequerida);
 
     try {
-      const response = await fetch("http://localhost:3300/cadastro", {
-        method: "POST",
-        headers: {
-          accept: "application/json",
-          "content-type": "application/json",
-        },
-        body,
-      });
+      const response = await fetch(
+        "https://clarke-energia.herokuapp.com/cadastro",
+        {
+          method: "POST",
+          headers: {
+            accept: "application/json",
+            "content-type": "application/json",
+          },
+          body,
+        }
+      );
 
       const cadastro = await response.json();
 
@@ -94,7 +100,7 @@ export function FetchProvider({ children }) {
 
     try {
       const response = await fetch(
-        `http://localhost:3300/?demanda_kwh=${valorDemanda}`,
+        `https://clarke-energia.herokuapp.com/?demanda_kwh=${valorDemanda}`,
         {
           method: "GET",
           headers: {
