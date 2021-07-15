@@ -23,15 +23,15 @@ function Rotas() {
   return (
     <Router>
       <AuthProvider>
-        <FetchProvider>
-          <Switch>
-            <Route exact path="/" component={Login} />
-            <Route path="/cadastro" component={Cadastro} />
-            <AuthPath>
-              <Route path="/fornecedores" component={Fornecedores} />
-            </AuthPath>
-          </Switch>
-        </FetchProvider>
+        {/* <FetchProvider> */}
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <Route path="/cadastro" component={Cadastro} />
+          <AuthPath>
+            <Route path="/fornecedores" component={Fornecedores} />
+          </AuthPath>
+        </Switch>
+        {/* </FetchProvider> */}
       </AuthProvider>
     </Router>
   );
